@@ -1,0 +1,11 @@
+package com.example.demo;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+class MyBean {
+
+    public MyBean(){
+        System.out.println("gggg");
+    }
+}
