@@ -1,23 +1,25 @@
 package com.example.demo;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 
 @Component
-public class BeanCollection {
+@Profile("natural")
+public class NaturalOrderedCollection implements OrderedStorage {
 
-    @Bean
-    public BeanCollection beanCollection(){
-        return beanCollection();
+    private List<Integer> list = new ArrayList<>();
+
+    @Override
+    public void add(Integer number) {
+        list.add(number);
     }
 
-    @Bean
-    public List<Integer> nameList(){
-        return Arrays.asList(1,3,5);
+    @Override
+    public List<Integer> getAll() {
+        return list;
     }
 }
