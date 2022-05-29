@@ -1,11 +1,11 @@
 package com.example.demo;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
 
-@Configuration
-class MyBean {
+@Service
+class MyBean1 {
 
-    public MyBean(){
+    public void MyBean(){
         System.out.println("gggg");
     }
 }

@@ -1,9 +1,11 @@
-package NewBeanPackage;
+package com.example.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-public class MyBean3 {
+@Service
+class MyBean3 {
 
-    @Autowired
-    private MyBean3 repository;
+    public void MyBean (){
+        System.out.println("Hello");
+    }
 }

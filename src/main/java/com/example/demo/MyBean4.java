@@ -1,4 +1,11 @@
-package NewBeanPackage;
+package com.example.demo;
 
-public class MyBean4 {
+import org.springframework.stereotype.Service;
+
+@Service
+class MyBean4 {
+
+    public void MyBean(){
+        System.out.println("Say Hello");
+    }
 }
